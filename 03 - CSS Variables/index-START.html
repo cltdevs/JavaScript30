@@ -61,15 +61,10 @@
   </style>
 
   <script>
-    // First step: query all inputs.
-  // Step two: iterate over inputs, add 'change' and 'mousemove' event handlers
-  // Step three: define that event handler
-    // b.) have event handler update CSS variable
 
     const inputs = document.querySelectorAll(".controls input");
 
     function handleUpdate() {
-      //console.log(this);
       const suffix = this.dataset.sizing || "";
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
     }
